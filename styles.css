@@ -168,6 +168,11 @@ h3 { font-size: 19px; line-height: 1.2; }
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height .28s ease; }
 .faq-answer p { color: var(--muted); margin: 0; padding: 0 45px 22px 0; font-size: 14px; }
 
+.faq-actions { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; margin-top: 8px; }
+.faq-actions .btn { font-size: 14px; max-width: 100%; }
+.btn-faq-email { font-size: 13.5px; padding: 0 20px; }
+.btn-faq-email span { overflow-wrap: anywhere; word-break: break-word; }
+
 /* Contact & Direct Call Hub */
 .contact-section { padding: 110px 0; position: relative; overflow: hidden; border-top: 1px solid var(--line); background: radial-gradient(circle at 50% 10%, rgba(39,136,255,.14), transparent 45%), linear-gradient(180deg, #090e16 0%, #06090e 100%); }
 .contact-card { border: 1px solid var(--line); background: rgba(11,16,24,.82); backdrop-filter: blur(24px); box-shadow: var(--shadow); padding: 60px 50px; border-radius: 28px; position: relative; overflow: hidden; }
@@ -191,15 +196,19 @@ h3 { font-size: 19px; line-height: 1.2; }
 .phone-action-tag { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: rgba(0,0,0,.22); font-size: 12px; font-weight: 800; letter-spacing: .02em; margin-left: 10px; }
 .phone-action-tag svg { width: 14px; height: 14px; }
 
-.contact-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; position: relative; z-index: 2; }
-.info-box { border: 1px solid var(--line); background: rgba(255,255,255,.025); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; transition: .2s ease; }
+.contact-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; position: relative; z-index: 2; }
+.info-box { border: 1px solid var(--line); background: rgba(255,255,255,.025); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; transition: .2s ease; min-width: 0; overflow: hidden; }
+.info-box-body { min-width: 0; width: 100%; overflow: hidden; }
 .info-box:hover { border-color: rgba(39,136,255,.3); background: rgba(39,136,255,.04); }
 .info-box-link { cursor: pointer; text-decoration: none; }
 .info-box-link:hover { transform: translateY(-3px); }
+.info-box-email { border-color: rgba(39,136,255,.25); background: rgba(39,136,255,.03); }
+.info-box-email:hover { border-color: rgba(39,136,255,.55); background: rgba(39,136,255,.08); }
 .info-icon { width: 40px; height: 40px; border-radius: 12px; background: var(--blue-soft); border: 1px solid rgba(39,136,255,.2); color: var(--blue-2); display: grid; place-items: center; flex: 0 0 auto; }
 .info-icon svg { width: 20px; height: 20px; }
 .info-box small { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .14em; font-weight: 800; display: block; margin-bottom: 4px; }
-.info-box strong { font-size: 14px; color: #fff; display: block; }
+.info-box strong { font-size: 14px; color: #fff; display: block; overflow-wrap: anywhere; word-break: break-word; }
+.info-box .email-value { font-size: 13.5px; color: #72b6ff; line-height: 1.4; overflow-wrap: anywhere; word-break: break-word; }
 .info-box p { color: var(--muted); font-size: 12px; margin: 6px 0 0; line-height: 1.45; }
 
 .site-footer { padding: 70px 0 24px; background: #05070b; border-top: 1px solid var(--line); }
